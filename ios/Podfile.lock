@@ -76,6 +76,8 @@ PODS:
   - MoEngagePluginBase (3.0.0):
     - MoEngage-iOS-SDK (< 8.4.0, >= 8.3.0)
     - MoEngageInApp (< 3.4.0, >= 3.3.0)
+  - MoEngageRichNotification (6.3.1):
+    - MoEngage-iOS-SDK (< 8.4.0, >= 8.3.0)
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
     - nanopb/encode (= 1.30906.0)
@@ -327,6 +329,8 @@ DEPENDENCIES:
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - MoEngage-iOS-SDK
+  - MoEngageRichNotification
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -368,6 +372,7 @@ SPEC REPOS:
     - MoEngage-iOS-SDK
     - MoEngageInApp
     - MoEngagePluginBase
+    - MoEngageRichNotification
     - nanopb
     - PromisesObjC
     - Protobuf
@@ -450,6 +455,7 @@ SPEC CHECKSUMS:
   MoEngage-iOS-SDK: 793582fede7e952ea7338e1bd6d5f5003c32b0d5
   MoEngageInApp: 07d7b44c15f1ea943a3b721d31c985be782ceb7c
   MoEngagePluginBase: 3cd6a44279b52e2ada15618c6a43da88d7dedf92
+  MoEngageRichNotification: b8fa7d97b77f029ec0a56878973efcb09290d37d
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Protobuf: e7846f61e8542750cf311385fc633c1d00928f9f
@@ -478,6 +484,6 @@ SPEC CHECKSUMS:
   RNFBMessaging: 93a705b8286452d422a404d1303689a9b59012a0
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: a3537d709984dbdea243a2fdd879fecb5d11043a
+PODFILE CHECKSUM: e46a618a3015d60733f9d154b882bbe17a6b714e
 
 COCOAPODS: 1.11.3

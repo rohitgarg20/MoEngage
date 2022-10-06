@@ -10,8 +10,8 @@
 #import <FlipperKitUserDefaultsPlugin/FKUserDefaultsPlugin.h>
 #import <FlipperKitNetworkPlugin/FlipperKitNetworkPlugin.h>
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
-#import <ReactNativeMoEngage/MoEngageInitializer.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
+
 
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
@@ -24,10 +24,18 @@ static void InitializeFlipper(UIApplication *application) {
 }
 #endif
 
+#import <ReactNativeMoEngage/MoEngageInitializer.h>
+@import MoEngageSDK;
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+  MOSDKConfig* sdkConfig = [[MOSDKConfig alloc] initWithAppID:@"8O6K2BUCIK6GD80MYJK3Y81S"];
+  sdkConfig.appGroupID = @"group.com.moengage.iphone.mainapp";
+  [[MoEngageInitializer sharedInstance] initializeDefaultSDKConfig:sdkConfig andLaunchOptions:launchOptions];
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
 #endif
